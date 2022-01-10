@@ -15,4 +15,4 @@ vis_opts = {'height': '600px', # change height
 
 # init Jaal and run server (with gunicorn)
 app = Jaal(edge_df, node_df).create()
-server = app.server
+server = app.plot
