@@ -1,1 +1,1 @@
-web: gunicorn main:server -b neucrest.herokuapp.com
+web: gunicorn main:server
