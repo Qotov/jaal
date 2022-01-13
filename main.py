@@ -11,8 +11,8 @@ vis_opts = {'height': '600px', # change height
             'physics':{'stabilization':{'iterations': 100}}} # define the convergence iteration of network
 
 # init Jaal and run server (with opts)
-# Jaal(edge_df, node_df).plot(vis_opts=vis_opts)
+Jaal(edge_df, node_df).plot(host="neucrest.herokuapp.com", port="8050", vis_opts=vis_opts)
 
 # init Jaal and run server (with gunicorn)
-app = Jaal(edge_df, node_df).create()
-server = app.plot
+# app = Jaal(edge_df, node_df).create()
+# server = app.plot
