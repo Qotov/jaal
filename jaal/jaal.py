@@ -7,7 +7,7 @@ Main class for Jaal network visualization dashboard
 import dash
 import visdcc
 import pandas as pd
-from dash import dcc, html
+#from dash import dcc, html
 # import dash_core_components as dcc
 # import dash_html_components as html
 import dash_bootstrap_components as dbc
