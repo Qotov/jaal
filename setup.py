@@ -25,7 +25,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="jaal_nc",
+    name="ncnetworkviz",
     # version="0.0.6",
     version=get_version("jaal/__init__.py"),
     author="Mohit Mayank / (modified by A. Kotov)",
