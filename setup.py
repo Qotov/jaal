@@ -25,15 +25,14 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="jaal",
+    name="jaal_nc",
     # version="0.0.6",
     version=get_version("jaal/__init__.py"),
-    author="Mohit Mayank",
-    author_email="mohitmayank1@gmail.com",
-    description="jaal - your interactive network visualizer dashboard",
-    long_description=long_description,
+    author="Mohit Mayank / (modified by A. Kotov)",
+    author_email="alexander.o.kotov@gmail.com",
+    description="small update of jaal",
     long_description_content_type="text/markdown",
-    url="https://github.com/imohitmayank/jaal",
+    url="https://github.com/Qotov/jaal",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
