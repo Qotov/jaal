@@ -252,21 +252,21 @@ def get_app_layout(graph_data, color_legends=[], directed=False, vis_opts=None):
                                 id="color-legend-popup", is_open=False, target="color-legend-toggle",
                             ),
                         ], {**fetch_flex_row_style(), 'margin-left': 0, 'margin-right':0, 'justify-content': 'space-between'}),
-                        dbc.Collapse([
-                            html.Hr(className="my-2"),
-                            get_select_form_layout(
-                                id='color_nodes',
-                                options=[{'label': opt, 'value': opt} for opt in cat_node_features],
-                                label='Color nodes by',
-                                description='Select the categorical node property to color nodes by'
-                            ),
-                            get_select_form_layout(
-                                id='color_edges',
-                                options=[{'label': opt, 'value': opt} for opt in cat_edge_features],
-                                label='Color edges by',
-                                description='Select the categorical edge property to color edges by'
-                            ),
-                        ], id="color-show-toggle", is_open=True),
+                        # dbc.Collapse([
+                        #     html.Hr(className="my-2"),
+                        #     get_select_form_layout(
+                        #         id='color_nodes',
+                        #         options=[{'label': opt, 'value': opt} for opt in cat_node_features],
+                        #         label='Color nodes by',
+                        #         description='Select the categorical node property to color nodes by'
+                        #     ),
+                        #     get_select_form_layout(
+                        #         id='color_edges',
+                        #         options=[{'label': opt, 'value': opt} for opt in cat_edge_features],
+                        #         label='Color edges by',
+                        #         description='Select the categorical edge property to color edges by'
+                        #     ),
+                        # ], id="color-show-toggle", is_open=True),
 
                         # ---- size section ----
                         create_row([
@@ -279,21 +279,21 @@ def get_app_layout(graph_data, color_legends=[], directed=False, vis_opts=None):
                             #     id="color-legend-popup", is_open=False, target="color-legend-toggle",
                             # ),
                         ], {**fetch_flex_row_style(), 'margin-left': 0, 'margin-right':0, 'justify-content': 'space-between'}),
-                        dbc.Collapse([
-                            html.Hr(className="my-2"),
-                            get_select_form_layout(
-                                id='size_nodes',
-                                options=[{'label': opt, 'value': opt} for opt in num_node_features],
-                                label='Size nodes by',
-                                description='Select the numerical node property to size nodes by'
-                            ),
-                            get_select_form_layout(
-                                id='size_edges',
-                                options=[{'label': opt, 'value': opt} for opt in num_edge_features],
-                                label='Size edges by',
-                                description='Select the numerical edge property to size edges by'
-                            ),
-                        ], id="size-show-toggle", is_open=True),
+                        # dbc.Collapse([
+                        #     html.Hr(className="my-2"),
+                        #     get_select_form_layout(
+                        #         id='size_nodes',
+                        #         options=[{'label': opt, 'value': opt} for opt in num_node_features],
+                        #         label='Size nodes by',
+                        #         description='Select the numerical node property to size nodes by'
+                        #     ),
+                        #     get_select_form_layout(
+                        #         id='size_edges',
+                        #         options=[{'label': opt, 'value': opt} for opt in num_edge_features],
+                        #         label='Size edges by',
+                        #         description='Select the numerical edge property to size edges by'
+                        #     ),
+                        # ], id="size-show-toggle", is_open=True),
 
                     ], className="card", style={'padding': '5px', 'background': '#e5e5e5'}),
                 ],width=3, style={'display': 'flex', 'justify-content': 'center', 'align-items': 'center'}),
